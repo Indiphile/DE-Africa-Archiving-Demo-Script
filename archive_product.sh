@@ -9,7 +9,7 @@ datacube system check
 #conda activate odc_env
 
 echo "Product Name"
-read PRODUCT_NAME
+read ${PRODUCT_NAME}
 
 echo "start archiving datasets"
 python3 archive_odc_product.py $PRODUCT_NAME
